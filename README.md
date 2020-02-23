@@ -15,8 +15,10 @@ version : JAVA 8 (build 1.8.0_241-b07)
    (2) bracket / percent
 
 
+
 3. use
 
-Press the number and operator button.
-When you want to complete the calculation, press the '=' button.
+
+   Press the number and operator button.
+   When you want to complete the calculation, press the '=' button.
    
