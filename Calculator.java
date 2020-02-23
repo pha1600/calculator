@@ -21,7 +21,6 @@ public class Calculator {
 
 	public static void main(String[] args) {
 		
-		//main
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -40,85 +39,80 @@ public class Calculator {
 
 	private void initialize() {
 		
-		//ÀüÃ¼ ÇÁ·¹ÀÓ
 		frame = new JFrame();
-		frame.getContentPane().setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 24));
+		frame.getContentPane().setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 24));
 		frame.setBounds(100, 100, 338, 585);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		
-		// ÇöÀç °è»ê ¶óº§
 		JLabel displayLabel = new JLabel("0");
 		displayLabel.setHorizontalAlignment(SwingConstants.RIGHT);
-		displayLabel.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 40));
+		displayLabel.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 40));
 		displayLabel.setBounds(26, 72, 267, 70);
 		frame.getContentPane().add(displayLabel);
 		
-		// ÀÌÀü °è»ê ¶óº§
 		JLabel beforeLabel = new JLabel("0");
 		beforeLabel.setHorizontalAlignment(SwingConstants.RIGHT);
-		beforeLabel.setFont(new Font("³ª´®°íµñ", Font.PLAIN, 20));
+		beforeLabel.setFont(new Font("ë‚˜ëˆ”ê³ ë”•", Font.PLAIN, 20));
 		beforeLabel.setBounds(27, 23, 266, 48);
 		frame.getContentPane().add(beforeLabel);
 		
-		// ¼ýÀÚ ¹öÆ°
+		
 		JButton btn7 = new JButton("7");
-		btn7.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn7.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn7.setBackground(Color.lightGray);
 		btn7.setBounds(14, 234, 70, 70);
 		frame.getContentPane().add(btn7);
 		
 		JButton btn8 = new JButton("8");
-		btn8.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn8.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn8.setBackground(Color.lightGray);
 		btn8.setBounds(89, 234, 70, 70);
 		frame.getContentPane().add(btn8);
 		
 		JButton btn9 = new JButton("9");
-		btn9.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn9.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn9.setBackground(Color.lightGray);
 		btn9.setBounds(163, 234, 70, 70);
 		frame.getContentPane().add(btn9);
 		
 		JButton btn4 = new JButton("4");
-		btn4.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn4.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn4.setBackground(Color.lightGray);
 		btn4.setBounds(14, 308, 70, 70);
 		frame.getContentPane().add(btn4);
 		
 		JButton btn5 = new JButton("5");
-		btn5.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn5.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn5.setBackground(Color.lightGray);
 		btn5.setBounds(89, 308, 70, 70);
 		frame.getContentPane().add(btn5);
 		
 		JButton btn6 = new JButton("6");
-		btn6.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn6.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn6.setBackground(Color.lightGray);
 		btn6.setBounds(163, 308, 70, 70);
 		frame.getContentPane().add(btn6);
 		
 		JButton btn1 = new JButton("1");
-		btn1.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn1.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn1.setBackground(Color.lightGray);
 		btn1.setBounds(14, 382, 70, 70);
 		frame.getContentPane().add(btn1);
 		
 		JButton btn2 = new JButton("2");
-		btn2.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn2.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn2.setBackground(Color.lightGray);
 		btn2.setBounds(89, 382, 70, 70);
 		frame.getContentPane().add(btn2);
 		
 		JButton btn3 = new JButton("3");
-		btn3.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn3.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn3.setBackground(Color.lightGray);
 		btn3.setBounds(163, 382, 70, 70);
 		frame.getContentPane().add(btn3);
 		
 		
-		// Dot(.) ¹öÆ°
 		JButton btnDot = new JButton(".");
 		btnDot.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -126,13 +120,13 @@ public class Calculator {
 				displayLabel.setText(displayStr+".");
 			}
 		});
-		btnDot.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnDot.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnDot.setBackground(Color.lightGray);
 		btnDot.setBounds(14, 456, 70, 70);
 		frame.getContentPane().add(btnDot);
 		
 		JButton btn0 = new JButton("0");
-		btn0.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btn0.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btn0.setBackground(Color.lightGray);
 		btn0.setBounds(89, 456, 70, 70);
 		frame.getContentPane().add(btn0);
@@ -144,12 +138,12 @@ public class Calculator {
 				beforeLabel.setText("0");
 			}
 		});
-		btnC.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnC.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnC.setBackground(Color.lightGray);
 		btnC.setBounds(163, 456, 70, 70);
 		frame.getContentPane().add(btnC);
 		
-		// °ýÈ£ ¹öÆ°
+		
 		JButton btnAng = new JButton("( )");
 		btnAng.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {				
@@ -170,13 +164,13 @@ public class Calculator {
 				}
 			}
 		});
-		btnAng.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnAng.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnAng.setBackground(Color.gray);
 		btnAng.setBounds(14, 159, 70, 70);
 		frame.getContentPane().add(btnAng);
 				
 		
-		// % ¹öÆ°
+		
 		JButton btnPer = new JButton("%");
 		btnPer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -187,13 +181,13 @@ public class Calculator {
 				displayLabel.setText(result+"");
 			}
 		});
-		btnPer.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnPer.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnPer.setBackground(Color.gray);
 		btnPer.setBounds(89, 159, 70, 70);
 		frame.getContentPane().add(btnPer);
 				
 				
-		// ¡ç ¹öÆ° 
+	
 		JButton btnDel = new JButton("\u2190");
 		btnDel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -206,13 +200,13 @@ public class Calculator {
 				}
 			}
 		});
-		btnDel.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnDel.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnDel.setBackground(Color.gray);
 		btnDel.setBounds(163, 159, 70, 70);
 		frame.getContentPane().add(btnDel);	
 		
 		
-		// ´õÇÏ±â ¹öÆ° 
+		
 		JButton btnAdd = new JButton("+");
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -231,13 +225,13 @@ public class Calculator {
 				}
 			}
 		});
-		btnAdd.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnAdd.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnAdd.setBackground(Color.gray);
 		btnAdd.setBounds(236, 159, 70, 70);
 		frame.getContentPane().add(btnAdd);
 		
 		
-		// »©±â ¹öÆ°
+		
 		JButton btnSub = new JButton("-");
 		btnSub.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -256,13 +250,13 @@ public class Calculator {
 				}
 			}
 		});
-		btnSub.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnSub.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnSub.setBackground(Color.gray);
 		btnSub.setBounds(236, 234, 70, 70);
 		frame.getContentPane().add(btnSub);
 		
 		
-		// °öÇÏ±â ¹öÆ°
+		
 		JButton btnMul = new JButton("*");
 		btnMul.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -281,13 +275,13 @@ public class Calculator {
 				}
 			}
 		});
-		btnMul.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnMul.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnMul.setBackground(Color.gray);
 		btnMul.setBounds(236, 308, 70, 70);
 		frame.getContentPane().add(btnMul);
 		
 		
-		// ³ª´©±â ¹öÆ°
+		
 		JButton btnDiv = new JButton("/");
 		btnDiv.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -306,13 +300,13 @@ public class Calculator {
 				}
 			}
 		});
-		btnDiv.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnDiv.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnDiv.setBackground(Color.gray);
 		btnDiv.setBounds(236, 382, 70, 70);
 		frame.getContentPane().add(btnDiv);
 		
 		
-		// = ¹öÆ° (ÀÚ¹Ù½ºÅ©¸³Æ® eval ÇÔ¼ö ÀÌ½Ä)
+		
 		JButton btnResult = new JButton("=");
 		btnResult.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -320,11 +314,11 @@ public class Calculator {
 				beforeLabel.setText(beforeLabel.getText()+displayLabel.getText());
 				ScriptEngineManager manager = new ScriptEngineManager();
 				ScriptEngine engine = manager.getEngineByName("js");
-				// ¿¹¿ÜÃ³¸®ÇØ¾ß »ç¿ë °¡´É
+				
 				try {
 					Object result = engine.eval(beforeLabel.getText());
 					String resultStr = result.toString();
-					//¼Ò¼öÁ¡ÀÌ .0ÀÌ¸é Á¤¼ö·Î º¸¿©ÁÜ
+					
 					if(resultStr.substring(resultStr.length()-2).equals(".0")) {
 						displayLabel.setText(resultStr.substring(0, resultStr.length()-2));
 					}
@@ -336,12 +330,12 @@ public class Calculator {
 				beforeLabel.setText("0");
 			}
 		});
-		btnResult.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 20));
+		btnResult.setFont(new Font("ë‚˜ëˆ”ê³ ë”• ExtraBold", Font.PLAIN, 20));
 		btnResult.setBackground(Color.pink);
 		btnResult.setBounds(236, 456, 70, 70);
 		frame.getContentPane().add(btnResult);	
 		
-		// ¼ýÀÚ ¹öÆ°¿¡ action ÇÔ¼ö °´Ã¼ »ý¼º
+		
 		btn0.addActionListener(new NumberAction(displayLabel, beforeLabel, "0"));
 		btn1.addActionListener(new NumberAction(displayLabel, beforeLabel, "1"));
 		btn2.addActionListener(new NumberAction(displayLabel, beforeLabel, "2"));
@@ -355,7 +349,7 @@ public class Calculator {
 	}
 }
 
-//¼ýÀÚ ¹öÆ° action ÇÔ¼ö
+
 class NumberAction implements ActionListener{
 
 	private JLabel displayLabel;
