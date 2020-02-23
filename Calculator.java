@@ -45,6 +45,8 @@ public class Calculator {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
+		
+		
 		JLabel displayLabel = new JLabel("0");
 		displayLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		displayLabel.setFont(new Font("나눔고딕 ExtraBold", Font.PLAIN, 40));
@@ -56,6 +58,7 @@ public class Calculator {
 		beforeLabel.setFont(new Font("나눔고딕", Font.PLAIN, 20));
 		beforeLabel.setBounds(27, 23, 266, 48);
 		frame.getContentPane().add(beforeLabel);
+		
 		
 		
 		JButton btn7 = new JButton("7");
@@ -113,6 +116,7 @@ public class Calculator {
 		frame.getContentPane().add(btn3);
 		
 		
+		
 		JButton btnDot = new JButton(".");
 		btnDot.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -142,6 +146,7 @@ public class Calculator {
 		btnC.setBackground(Color.lightGray);
 		btnC.setBounds(163, 456, 70, 70);
 		frame.getContentPane().add(btnC);
+		
 		
 		
 		JButton btnAng = new JButton("( )");
@@ -334,6 +339,7 @@ public class Calculator {
 		btnResult.setBackground(Color.pink);
 		btnResult.setBounds(236, 456, 70, 70);
 		frame.getContentPane().add(btnResult);	
+		
 		
 		
 		btn0.addActionListener(new NumberAction(displayLabel, beforeLabel, "0"));
