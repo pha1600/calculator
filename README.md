@@ -7,11 +7,16 @@ version : JAVA 8 (build 1.8.0_241-b07)
 ![image](https://user-images.githubusercontent.com/61379799/75113181-c6ddf080-568e-11ea-8f1f-929c5aa3b16d.png)
 
 
+
 2. function
 
    (1) addition / subtraction / multiplication / division
    
    (2) bracket / percent
-   
 
- 
+
+3. use
+
+Press the number and operator button.
+When you want to complete the calculation, press the '=' button.
+   
